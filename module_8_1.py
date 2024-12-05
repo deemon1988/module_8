@@ -1,3 +1,5 @@
+# Домашнее задание по теме "Try и Except"
+
 def add_everything_up(a, b):
     try:
         result = round(a + b, 3)
