@@ -22,17 +22,13 @@ def calculate_average(numbers):
         avg_numbers = summ_numbers / (len(numbers) - data[1])
         return avg_numbers
     except ZeroDivisionError as exc:
-        print(f"{exc} - количество чисел = 0")
+        # print(f"{exc} - количество чисел = 0")
         return 0
     except TypeError as ex:
-        print(f"{ex} - В numbers записан некорректный тип данных")
+        print("В numbers записан некорректный тип данных")
 
 
-
-
-print(calculate_average("1, 2, 3"))
-print(calculate_average([1, "Строка", 3, "Ещё Строка"]))
-print(calculate_average(567))
+print(f'Результат 1: {calculate_average("1, 2, 3")}')
+print(f'Результат 2: {calculate_average([1, "Строка", 3, "Ещё Строка"])}')
+print(f'Результат 3: {calculate_average(567)}')
 print(f'Результат 4: {calculate_average([42, 15, 36, 13])}')
-
-
